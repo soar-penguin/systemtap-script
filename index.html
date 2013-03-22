@@ -1,0 +1,120 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Systemtap-script</title>
+  <meta name="description" content="useful systemtap script.">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Systemtap-script</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">useful systemtap script.</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/soar-penguin/systemtap-script/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/soar-penguin/systemtap-script/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/soar-penguin/systemtap-script" class="code">View Systemtap-script on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>systemtap-script</h1>
+
+<h1></h1>
+
+<h2>useful systemtap script.</h2>
+
+<p>just for study.</p>
+
+<h2>setup for ubuntu</h2>
+
+<p>### 1.install systemtap
+    $sudo apt-get install systemtap
+    $sudo apt-get install systemtap-runtime</p>
+
+<p>### 2.install kernel-debug-info
+  use source-list:
+    (1)Install the Linux kernel debug image
+    ----------------------------------------------------------</p>
+
+<pre><code>Add debug source to the sources list of Ubuntu
+
+Create an /etc/apt/sources.list.d/ddebs.list by running the following line at
+a terminal:
+echo "deb http://ddebs.ubuntu.com $(lsb_release -cs) main restricted universe multiverse" | \
+sudo tee -a /etc/apt/sources.list.d/ddebs.list
+
+Stable releases (not alphas and betas) require three more lines adding to the
+same file, which is done by the following terminal command:
+echo "deb http://ddebs.ubuntu.com $(lsb_release -cs)-updates main restricted universe multiverse
+deb http://ddebs.ubuntu.com $(lsb_release -cs)-security main restricted universe multiverse
+deb http://ddebs.ubuntu.com $(lsb_release -cs)-proposed main restricted universe multiverse" | \
+sudo tee -a /etc/apt/sources.list.d/ddebs.list
+
+Import the debug symbol archive signing key:
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 428D7C01
+
+Then run:
+sudo apt-get update
+
+Get Linux kernel debug image
+sudo apt-get install linux-image-$(uname -r)-dbgsym
+
+--------------------------------------------------------
+(2)General ddeb repository configuration
+# cat &gt; /etc/apt/sources.list.d/ddebs.list &lt;&lt; EOF
+deb http://ddebs.ubuntu.com/ precise main restricted universe multiverse
+EOF
+
+# apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ECDCAD72428D7C01
+# apt-get update
+</code></pre>
+
+<p>download url:
+    ubuntu kernel-debug-info: <a href="http://ddebs.ubuntu.com/pool/main/l/linux/">http://ddebs.ubuntu.com/pool/main/l/linux/</a></p>
+
+<h2>setup for fedora</h2>
+
+<pre><code>yum install systemtap kernel-devel debuginfo-install kernel
+</code></pre>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/soar-penguin" class="avatar"><img src="https://secure.gravatar.com/avatar/89aa89174e5fbc529a9733e95b94e0f9?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="48" height="48"/></a> <a href="https://github.com/soar-penguin">soar-penguin</a> maintains <a href="https://github.com/soar-penguin/systemtap-script">Systemtap-script</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/soar-penguin/systemtap-script/tarball/master" class="tar">tar</a><a href="https://github.com/soar-penguin/systemtap-script/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
