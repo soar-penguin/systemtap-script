@@ -51,4 +51,7 @@ setup for ubuntu
     
 setup for fedora
     yum install systemtap kernel-devel debuginfo-install kernel
+    
+main pages
+    http://soar-penguin.github.com/systemtap-script/
 
